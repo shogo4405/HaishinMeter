@@ -7,20 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291540B61FE41F5900EC9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540B51FE41F5900EC9111 /* AppDelegate.swift */; };
-		291540B81FE41F5900EC9111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540B71FE41F5900EC9111 /* ViewController.swift */; };
-		291540BA1FE41F5900EC9111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291540B91FE41F5900EC9111 /* Assets.xcassets */; };
-		291540BD1FE41F5900EC9111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291540BB1FE41F5900EC9111 /* Main.storyboard */; };
+		291540D01FE4333A00EC9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540CC1FE4333900EC9111 /* AppDelegate.swift */; };
+		291540D11FE4333A00EC9111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540CD1FE4333900EC9111 /* ViewController.swift */; };
+		291540D21FE4333A00EC9111 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 291540CE1FE4333900EC9111 /* Info.plist */; };
+		291540D81FE433B600EC9111 /* FLVAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */; };
+		291540DC1FE4371200EC9111 /* HaishinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291540DA1FE436FD00EC9111 /* HaishinKit.framework */; };
+		291540DD1FE4371200EC9111 /* HaishinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540DA1FE436FD00EC9111 /* HaishinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		291540DE1FE4371200EC9111 /* Logboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; };
+		291540DF1FE4371200EC9111 /* Logboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		291540E31FE4373500EC9111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291540E11FE4373500EC9111 /* Main.storyboard */; };
+		291540F11FE4E12E00EC9111 /* DnDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F01FE4E12E00EC9111 /* DnDDelegate.swift */; };
+		291540F71FE511DF00EC9111 /* DnDableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F61FE511DF00EC9111 /* DnDableView.swift */; };
+		291540F91FE552AC00EC9111 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F81FE552AC00EC9111 /* Data+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		291540E01FE4371300EC9111 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				291540DF1FE4371200EC9111 /* Logboard.framework in Embed Frameworks */,
+				291540DD1FE4371200EC9111 /* HaishinKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		291540B21FE41F5900EC9111 /* HaishinMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaishinMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		291540B51FE41F5900EC9111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		291540B71FE41F5900EC9111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		291540B91FE41F5900EC9111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		291540BC1FE41F5900EC9111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		291540BE1FE41F5900EC9111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		291540BF1FE41F5900EC9111 /* HaishinMeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HaishinMeter.entitlements; sourceTree = "<group>"; };
+		291540C81FE42D7000EC9111 /* Logboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logboard.framework; path = Carthage/Build/Mac/Logboard.framework; sourceTree = "<group>"; };
+		291540CC1FE4333900EC9111 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		291540CD1FE4333900EC9111 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		291540CE1FE4333900EC9111 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
+		291540CF1FE4333900EC9111 /* HaishinMeter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = HaishinMeter.entitlements; path = Sources/HaishinMeter.entitlements; sourceTree = SOURCE_ROOT; };
+		291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FLVAnalyzerViewController.swift; path = Sources/FLVAnalyzer/FLVAnalyzerViewController.swift; sourceTree = SOURCE_ROOT; };
+		291540DA1FE436FD00EC9111 /* HaishinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaishinKit.framework; path = Carthage/Build/Mac/HaishinKit.framework; sourceTree = "<group>"; };
+		291540E21FE4373500EC9111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Sources/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		291540F01FE4E12E00EC9111 /* DnDDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DnDDelegate.swift; path = Sources/Protocol/DnDDelegate.swift; sourceTree = SOURCE_ROOT; };
+		291540F61FE511DF00EC9111 /* DnDableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DnDableView.swift; path = Sources/DnDableView.swift; sourceTree = SOURCE_ROOT; };
+		291540F81FE552AC00EC9111 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/Data+Extension.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291540DE1FE4371200EC9111 /* Logboard.framework in Frameworks */,
+				291540DC1FE4371200EC9111 /* HaishinKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +67,9 @@
 		291540A91FE41F5900EC9111 = {
 			isa = PBXGroup;
 			children = (
-				291540B41FE41F5900EC9111 /* HaishinMeter */,
+				291540CA1FE4331400EC9111 /* Sources */,
 				291540B31FE41F5900EC9111 /* Products */,
+				291540C71FE42D7000EC9111 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,18 +81,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		291540B41FE41F5900EC9111 /* HaishinMeter */ = {
+		291540C71FE42D7000EC9111 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				291540B51FE41F5900EC9111 /* AppDelegate.swift */,
-				291540B71FE41F5900EC9111 /* ViewController.swift */,
-				291540B91FE41F5900EC9111 /* Assets.xcassets */,
-				291540BB1FE41F5900EC9111 /* Main.storyboard */,
-				291540BE1FE41F5900EC9111 /* Info.plist */,
-				291540BF1FE41F5900EC9111 /* HaishinMeter.entitlements */,
+				291540DA1FE436FD00EC9111 /* HaishinKit.framework */,
+				291540C81FE42D7000EC9111 /* Logboard.framework */,
 			);
-			path = HaishinMeter;
+			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		291540CA1FE4331400EC9111 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				291540CC1FE4333900EC9111 /* AppDelegate.swift */,
+				291540F61FE511DF00EC9111 /* DnDableView.swift */,
+				291540D61FE4339100EC9111 /* FLVAnalyzer */,
+				291540CF1FE4333900EC9111 /* HaishinMeter.entitlements */,
+				291540CE1FE4333900EC9111 /* Info.plist */,
+				291540E11FE4373500EC9111 /* Main.storyboard */,
+				291540EF1FE4E07600EC9111 /* Protocol */,
+				291540CD1FE4333900EC9111 /* ViewController.swift */,
+				291540F81FE552AC00EC9111 /* Data+Extension.swift */,
+			);
+			name = Sources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		291540D61FE4339100EC9111 /* FLVAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */,
+			);
+			path = FLVAnalyzer;
+			sourceTree = "<group>";
+		};
+		291540EF1FE4E07600EC9111 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				291540F01FE4E12E00EC9111 /* DnDDelegate.swift */,
+			);
+			name = Protocol;
+			path = "/Users/shogo/Dropbox/xcode/HaishinMeter/New Group/Protocol";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -73,6 +134,7 @@
 				291540AE1FE41F5900EC9111 /* Sources */,
 				291540AF1FE41F5900EC9111 /* Frameworks */,
 				291540B01FE41F5900EC9111 /* Resources */,
+				291540E01FE4371300EC9111 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +157,7 @@
 				TargetAttributes = {
 					291540B11FE41F5900EC9111 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291540BA1FE41F5900EC9111 /* Assets.xcassets in Resources */,
-				291540BD1FE41F5900EC9111 /* Main.storyboard in Resources */,
+				291540D21FE4333A00EC9111 /* Info.plist in Resources */,
+				291540E31FE4373500EC9111 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,18 +197,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291540B81FE41F5900EC9111 /* ViewController.swift in Sources */,
-				291540B61FE41F5900EC9111 /* AppDelegate.swift in Sources */,
+				291540D81FE433B600EC9111 /* FLVAnalyzerViewController.swift in Sources */,
+				291540F91FE552AC00EC9111 /* Data+Extension.swift in Sources */,
+				291540F71FE511DF00EC9111 /* DnDableView.swift in Sources */,
+				291540D11FE4333A00EC9111 /* ViewController.swift in Sources */,
+				291540D01FE4333A00EC9111 /* AppDelegate.swift in Sources */,
+				291540F11FE4E12E00EC9111 /* DnDDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		291540BB1FE41F5900EC9111 /* Main.storyboard */ = {
+		291540E11FE4373500EC9111 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				291540BC1FE41F5900EC9111 /* Base */,
+				291540E21FE4373500EC9111 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -262,14 +329,19 @@
 		291540C31FE41F5900EC9111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HaishinMeter/HaishinMeter.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sources/HaishinMeter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = HaishinMeter/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.HaishinMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -277,11 +349,16 @@
 		291540C41FE41F5900EC9111 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HaishinMeter/HaishinMeter.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sources/HaishinMeter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_STYLE[sdk=*]" = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = HaishinMeter/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.HaishinMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
