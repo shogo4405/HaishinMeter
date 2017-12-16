@@ -135,6 +135,7 @@
 				291540AF1FE41F5900EC9111 /* Frameworks */,
 				291540B01FE41F5900EC9111 /* Resources */,
 				291540E01FE4371300EC9111 /* Embed Frameworks */,
+				291540FE1FE5AB4600EC9111 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,6 +192,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		291540FE1FE5AB4600EC9111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Logboard.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/HaishinKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		291540AE1FE41F5900EC9111 /* Sources */ = {
