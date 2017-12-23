@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291540D01FE4333A00EC9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540CC1FE4333900EC9111 /* AppDelegate.swift */; };
-		291540D11FE4333A00EC9111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540CD1FE4333900EC9111 /* ViewController.swift */; };
-		291540D21FE4333A00EC9111 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 291540CE1FE4333900EC9111 /* Info.plist */; };
-		291540D81FE433B600EC9111 /* FLVAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */; };
 		291540DC1FE4371200EC9111 /* HaishinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291540DA1FE436FD00EC9111 /* HaishinKit.framework */; };
 		291540DD1FE4371200EC9111 /* HaishinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540DA1FE436FD00EC9111 /* HaishinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		291540DE1FE4371200EC9111 /* Logboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; };
 		291540DF1FE4371200EC9111 /* Logboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		291540E31FE4373500EC9111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291540E11FE4373500EC9111 /* Main.storyboard */; };
-		291540F11FE4E12E00EC9111 /* DnDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F01FE4E12E00EC9111 /* DnDDelegate.swift */; };
-		291540F71FE511DF00EC9111 /* DnDableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F61FE511DF00EC9111 /* DnDableView.swift */; };
-		291540F91FE552AC00EC9111 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291540F81FE552AC00EC9111 /* Data+Extension.swift */; };
+		2995879D1FEFCBD200F11A7E /* NSTextViewAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */; };
+		29B086691FEEB64000CC1284 /* NSViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */; };
+		29B0866B1FEEB6EA00CC1284 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */; };
+		29B0866D1FEEB84000CC1284 /* NSStoryboard.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */; };
+		29EFA7841FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7831FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift */; };
+		29EFA7861FEEB0E700DB3A7A /* DnDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7851FEEB0E700DB3A7A /* DnDDelegate.swift */; };
+		29EFA78A1FEEB0F300DB3A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7871FEEB0F300DB3A7A /* AppDelegate.swift */; };
+		29EFA78B1FEEB0F300DB3A7A /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7881FEEB0F300DB3A7A /* Data+Extension.swift */; };
+		29EFA78C1FEEB0F300DB3A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7891FEEB0F300DB3A7A /* ViewController.swift */; };
+		29EFA78E1FEEB12C00DB3A7A /* DnDableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA78D1FEEB12C00DB3A7A /* DnDableView.swift */; };
+		29EFA7911FEEB15E00DB3A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EFA78F1FEEB15E00DB3A7A /* Main.storyboard */; };
+		29EFA7951FEEB1DF00DB3A7A /* RTMPAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EFA7941FEEB1DF00DB3A7A /* RTMPAnalyzerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,16 +43,20 @@
 /* Begin PBXFileReference section */
 		291540B21FE41F5900EC9111 /* HaishinMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaishinMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291540C81FE42D7000EC9111 /* Logboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logboard.framework; path = Carthage/Build/Mac/Logboard.framework; sourceTree = "<group>"; };
-		291540CC1FE4333900EC9111 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		291540CD1FE4333900EC9111 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		291540CE1FE4333900EC9111 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
-		291540CF1FE4333900EC9111 /* HaishinMeter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = HaishinMeter.entitlements; path = Sources/HaishinMeter.entitlements; sourceTree = SOURCE_ROOT; };
-		291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FLVAnalyzerViewController.swift; path = Sources/FLVAnalyzer/FLVAnalyzerViewController.swift; sourceTree = SOURCE_ROOT; };
 		291540DA1FE436FD00EC9111 /* HaishinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaishinKit.framework; path = Carthage/Build/Mac/HaishinKit.framework; sourceTree = "<group>"; };
-		291540E21FE4373500EC9111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Sources/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		291540F01FE4E12E00EC9111 /* DnDDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DnDDelegate.swift; path = Sources/Protocol/DnDDelegate.swift; sourceTree = SOURCE_ROOT; };
-		291540F61FE511DF00EC9111 /* DnDableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DnDableView.swift; path = Sources/DnDableView.swift; sourceTree = SOURCE_ROOT; };
-		291540F81FE552AC00EC9111 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/Data+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		299587981FEFC4A600F11A7E /* HaishinMeter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = HaishinMeter.entitlements; sourceTree = "<group>"; };
+		2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextViewAppender.swift; sourceTree = "<group>"; };
+		29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+Extension.swift"; sourceTree = "<group>"; };
+		29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard.Name+Extension.swift"; sourceTree = "<group>"; };
+		29EFA7831FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLVAnalyzerViewController.swift; sourceTree = "<group>"; };
+		29EFA7851FEEB0E700DB3A7A /* DnDDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DnDDelegate.swift; sourceTree = "<group>"; };
+		29EFA7871FEEB0F300DB3A7A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29EFA7881FEEB0F300DB3A7A /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		29EFA7891FEEB0F300DB3A7A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29EFA78D1FEEB12C00DB3A7A /* DnDableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DnDableView.swift; sourceTree = "<group>"; };
+		29EFA7901FEEB15E00DB3A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29EFA7941FEEB1DF00DB3A7A /* RTMPAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPAnalyzerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,7 @@
 		291540A91FE41F5900EC9111 = {
 			isa = PBXGroup;
 			children = (
-				291540CA1FE4331400EC9111 /* Sources */,
+				294555B01FEEAF7400C8F448 /* Sources */,
 				291540B31FE41F5900EC9111 /* Products */,
 				291540C71FE42D7000EC9111 /* Frameworks */,
 			);
@@ -90,39 +98,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		291540CA1FE4331400EC9111 /* Sources */ = {
+		294555B01FEEAF7400C8F448 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				291540CC1FE4333900EC9111 /* AppDelegate.swift */,
-				291540F61FE511DF00EC9111 /* DnDableView.swift */,
-				291540D61FE4339100EC9111 /* FLVAnalyzer */,
-				291540CF1FE4333900EC9111 /* HaishinMeter.entitlements */,
-				291540CE1FE4333900EC9111 /* Info.plist */,
-				291540E11FE4373500EC9111 /* Main.storyboard */,
-				291540EF1FE4E07600EC9111 /* Protocol */,
-				291540CD1FE4333900EC9111 /* ViewController.swift */,
-				291540F81FE552AC00EC9111 /* Data+Extension.swift */,
+				29EFA7871FEEB0F300DB3A7A /* AppDelegate.swift */,
+				29EFA7881FEEB0F300DB3A7A /* Data+Extension.swift */,
+				29EFA78D1FEEB12C00DB3A7A /* DnDableView.swift */,
+				29B086671FEEB5F500CC1284 /* Extension */,
+				294555B21FEEAFF800C8F448 /* FLVAnalyzer */,
+				299587981FEFC4A600F11A7E /* HaishinMeter.entitlements */,
+				2995879B1FEFCBB500F11A7E /* Logboard */,
+				29EFA78F1FEEB15E00DB3A7A /* Main.storyboard */,
+				294555B11FEEAFF100C8F448 /* Protocol */,
+				29EFA7931FEEB1A300DB3A7A /* RTMPAnalyzer */,
+				29EFA7891FEEB0F300DB3A7A /* ViewController.swift */,
 			);
-			name = Sources;
-			path = "New Group";
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		291540D61FE4339100EC9111 /* FLVAnalyzer */ = {
+		294555B11FEEAFF100C8F448 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				291540D71FE433B600EC9111 /* FLVAnalyzerViewController.swift */,
+				29EFA7851FEEB0E700DB3A7A /* DnDDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		294555B21FEEAFF800C8F448 /* FLVAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				29EFA7831FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift */,
 			);
 			path = FLVAnalyzer;
 			sourceTree = "<group>";
 		};
-		291540EF1FE4E07600EC9111 /* Protocol */ = {
+		2995879B1FEFCBB500F11A7E /* Logboard */ = {
 			isa = PBXGroup;
 			children = (
-				291540F01FE4E12E00EC9111 /* DnDDelegate.swift */,
+				2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */,
 			);
-			name = Protocol;
-			path = "/Users/shogo/Dropbox/xcode/HaishinMeter/New Group/Protocol";
-			sourceTree = "<absolute>";
+			path = Logboard;
+			sourceTree = "<group>";
+		};
+		29B086671FEEB5F500CC1284 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */,
+				29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */,
+				29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		29EFA7931FEEB1A300DB3A7A /* RTMPAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				29EFA7941FEEB1DF00DB3A7A /* RTMPAnalyzerViewController.swift */,
+			);
+			path = RTMPAnalyzer;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -136,6 +170,7 @@
 				291540B01FE41F5900EC9111 /* Resources */,
 				291540E01FE4371300EC9111 /* Embed Frameworks */,
 				291540FE1FE5AB4600EC9111 /* ShellScript */,
+				299587A11FEFCDD100F11A7E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -159,7 +194,7 @@
 					291540B11FE41F5900EC9111 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -186,8 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291540D21FE4333A00EC9111 /* Info.plist in Resources */,
-				291540E31FE4373500EC9111 /* Main.storyboard in Resources */,
+				29EFA7911FEEB15E00DB3A7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +243,19 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		299587A11FEFCDD100F11A7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,22 +263,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291540D81FE433B600EC9111 /* FLVAnalyzerViewController.swift in Sources */,
-				291540F91FE552AC00EC9111 /* Data+Extension.swift in Sources */,
-				291540F71FE511DF00EC9111 /* DnDableView.swift in Sources */,
-				291540D11FE4333A00EC9111 /* ViewController.swift in Sources */,
-				291540D01FE4333A00EC9111 /* AppDelegate.swift in Sources */,
-				291540F11FE4E12E00EC9111 /* DnDDelegate.swift in Sources */,
+				29EFA7951FEEB1DF00DB3A7A /* RTMPAnalyzerViewController.swift in Sources */,
+				29EFA78C1FEEB0F300DB3A7A /* ViewController.swift in Sources */,
+				29B0866B1FEEB6EA00CC1284 /* NSObject+Extension.swift in Sources */,
+				29EFA78A1FEEB0F300DB3A7A /* AppDelegate.swift in Sources */,
+				29EFA78B1FEEB0F300DB3A7A /* Data+Extension.swift in Sources */,
+				29EFA78E1FEEB12C00DB3A7A /* DnDableView.swift in Sources */,
+				2995879D1FEFCBD200F11A7E /* NSTextViewAppender.swift in Sources */,
+				29EFA7841FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift in Sources */,
+				29B086691FEEB64000CC1284 /* NSViewController+Extension.swift in Sources */,
+				29EFA7861FEEB0E700DB3A7A /* DnDDelegate.swift in Sources */,
+				29B0866D1FEEB84000CC1284 /* NSStoryboard.Name+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		291540E11FE4373500EC9111 /* Main.storyboard */ = {
+		29EFA78F1FEEB15E00DB3A7A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				291540E21FE4373500EC9111 /* Base */,
+				29EFA7901FEEB15E00DB3A7A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -350,16 +402,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sources/HaishinMeter.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.HaishinMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -370,17 +425,20 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sources/HaishinMeter.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				"CODE_SIGN_STYLE[sdk=*]" = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.HaishinMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

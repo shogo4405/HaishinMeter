@@ -3,20 +3,20 @@ import Foundation
 import HaishinKit
 
 final class FLVAnalyzerViewController: NSViewController {
-    @IBOutlet var tableView:NSTableView! = nil
-    @IBOutlet var splitView:NSSplitView! = nil
-    @IBOutlet var hexView:NSTextView! = nil
+    @IBOutlet var tableView: NSTableView! = nil
+    @IBOutlet var splitView: NSSplitView! = nil
+    @IBOutlet var hexView: NSTextView! = nil
 
-    private var tags:[FLVTag] = []
-    private var reader:FLVReader? = nil
+    private var tags: [FLVTag] = []
+    private var reader: FLVReader?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         (view as? DnDableView)?.delegate = self
     }
 
-    private func readFile(_ string:String?) {
-        guard let string:String = string, let url:URL = URL(string: string) else {
+    private func readFile(_ string: String?) {
+        guard let string: String = string, let url: URL = URL(string: string) else {
             return
         }
         tags.removeAll()
@@ -38,15 +38,15 @@ extension FLVAnalyzerViewController: NSTableViewDataSource {
     }
 
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        let tag:FLVTag = tags[row]
+        let tag: FLVTag = tags[row]
         switch tableColumn?.title ?? "" {
         case "Type":
             return "\(tag.tagType)"
         case "Codec":
-            if let tag:FLVAudioTag = tag as? FLVAudioTag {
+            if let tag: FLVAudioTag = tag as? FLVAudioTag {
                 return "\(tag.codec)"
             }
-            if let tag:FLVVideoTag = tag as? FLVVideoTag {
+            if let tag: FLVVideoTag = tag as? FLVVideoTag {
                 return "\(tag.codec)"
             }
             return ""
@@ -57,7 +57,7 @@ extension FLVAnalyzerViewController: NSTableViewDataSource {
         case "TimestampExtended":
             return tag.timestampExtended
         case "Remarks":
-            if let tag:FLVVideoTag = tag as? FLVVideoTag {
+            if let tag: FLVVideoTag = tag as? FLVVideoTag {
                 return "\(tag.avcPacketType):\(tag.frameType)"
             }
             return ""
@@ -70,7 +70,7 @@ extension FLVAnalyzerViewController: NSTableViewDataSource {
 extension FLVAnalyzerViewController: NSTableViewDelegate {
     // MARK: NSTableViewDelegate
     func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
-        guard let data:Data = reader?.getData(tags[row]) else {
+        guard let data: Data = reader?.getData(tags[row]) else {
             return false
         }
         hexView.string = data.bytes.description
@@ -85,7 +85,7 @@ extension FLVAnalyzerViewController: DnDDelegate {
     }
 
     func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        if let board = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray {
+        if let board = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue:  "NSFilenamesPboardType")) as? NSArray {
             readFile(board[0] as? String)
             return true
         }

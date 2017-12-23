@@ -11,7 +11,7 @@ final class DnDableView: NSView {
     }
 
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
-        guard let delegate:DnDDelegate = delegate else {
+        guard let delegate: DnDDelegate = delegate else {
             return super.draggingEntered(sender)
         }
         return delegate.draggingEntered(sender)
@@ -22,7 +22,7 @@ final class DnDableView: NSView {
     }
     
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        guard let delegate:DnDDelegate = delegate else {
+        guard let delegate: DnDDelegate = delegate else {
             return super.performDragOperation(sender)
         }
         return delegate.performDragOperation(sender)
