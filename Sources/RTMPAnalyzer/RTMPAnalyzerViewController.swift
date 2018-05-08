@@ -4,8 +4,8 @@ import Foundation
 import AVFoundation
 
 final class RTMPAnalyzerViewController: NSViewController {
-    @IBOutlet var previewView: GLLFView!
-    @IBOutlet var playbackView: GLLFView!
+    @IBOutlet var previewView: GLHKView!
+    @IBOutlet var playbackView: GLHKView!
 
     @IBOutlet var audioPopUpButton: NSPopUpButton!
     @IBOutlet var cameraPopUpButton: NSPopUpButton!
@@ -29,7 +29,7 @@ final class RTMPAnalyzerViewController: NSViewController {
         playbackStream.addObserver(self, forKeyPath: "currentFPS", options: .new, context: nil)
 
         let audios: [Any]! = AVCaptureDevice.devices(for: AVMediaType.audio)
-        
+
         for audio in audios {
             if let audio: AVCaptureDevice = audio as? AVCaptureDevice {
                 audioPopUpButton.addItem(withTitle: audio.localizedName)
@@ -46,22 +46,22 @@ final class RTMPAnalyzerViewController: NSViewController {
 
     override func viewWillAppear() {
         super.viewWillAppear()
-        publishStream.attachAudio(DeviceUtil.device(withLocalizedName:  audioPopUpButton.itemTitles[audioPopUpButton.indexOfSelectedItem], mediaType: AVMediaType.audio.rawValue))
-        publishStream.attachCamera(DeviceUtil.device(withLocalizedName:  cameraPopUpButton.itemTitles[cameraPopUpButton.indexOfSelectedItem], mediaType: AVMediaType.video.rawValue))
+        publishStream.attachAudio(DeviceUtil.device(withLocalizedName: audioPopUpButton.itemTitles[audioPopUpButton.indexOfSelectedItem], mediaType: .audio))
+        publishStream.attachCamera(DeviceUtil.device(withLocalizedName: cameraPopUpButton.itemTitles[cameraPopUpButton.indexOfSelectedItem], mediaType: .video))
         previewView.attachStream(publishStream)
         playbackView.attachStream(playbackStream)
     }
 
     @IBAction func selectAudio(_ sender: AnyObject) {
         let device: AVCaptureDevice? = DeviceUtil.device(withLocalizedName:
-            audioPopUpButton.itemTitles[audioPopUpButton.indexOfSelectedItem], mediaType: AVMediaType.audio.rawValue
+            audioPopUpButton.itemTitles[audioPopUpButton.indexOfSelectedItem], mediaType: .audio
         )
         publishStream.attachAudio(device)
     }
 
     @IBAction func selectCamera(_ sender: AnyObject) {
         let device: AVCaptureDevice? = DeviceUtil.device(withLocalizedName:
-            cameraPopUpButton.itemTitles[cameraPopUpButton.indexOfSelectedItem], mediaType: AVMediaType.video.rawValue
+            cameraPopUpButton.itemTitles[cameraPopUpButton.indexOfSelectedItem], mediaType: .video
         )
         publishStream.attachCamera(device)
     }

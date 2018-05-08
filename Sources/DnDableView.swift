@@ -16,11 +16,11 @@ final class DnDableView: NSView {
         }
         return delegate.draggingEntered(sender)
     }
-    
+
     override func draggingUpdated(_ sender: NSDraggingInfo) -> NSDragOperation {
         return .copy
     }
-    
+
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         guard let delegate: DnDDelegate = delegate else {
             return super.performDragOperation(sender)

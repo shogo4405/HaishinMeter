@@ -85,7 +85,7 @@ extension FLVAnalyzerViewController: DnDDelegate {
     }
 
     func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        if let board = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue:  "NSFilenamesPboardType")) as? NSArray {
+        if let board = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray {
             readFile(board[0] as? String)
             return true
         }
