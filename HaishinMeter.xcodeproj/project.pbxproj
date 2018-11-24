@@ -11,7 +11,6 @@
 		291540DD1FE4371200EC9111 /* HaishinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540DA1FE436FD00EC9111 /* HaishinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		291540DE1FE4371200EC9111 /* Logboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; };
 		291540DF1FE4371200EC9111 /* Logboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291540C81FE42D7000EC9111 /* Logboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2995879D1FEFCBD200F11A7E /* NSTextViewAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */; };
 		29B086691FEEB64000CC1284 /* NSViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */; };
 		29B0866B1FEEB6EA00CC1284 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */; };
 		29B0866D1FEEB84000CC1284 /* NSStoryboard.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */; };
@@ -45,10 +44,11 @@
 		291540C81FE42D7000EC9111 /* Logboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logboard.framework; path = Carthage/Build/Mac/Logboard.framework; sourceTree = "<group>"; };
 		291540DA1FE436FD00EC9111 /* HaishinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaishinKit.framework; path = Carthage/Build/Mac/HaishinKit.framework; sourceTree = "<group>"; };
 		299587981FEFC4A600F11A7E /* HaishinMeter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = HaishinMeter.entitlements; sourceTree = "<group>"; };
-		2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextViewAppender.swift; sourceTree = "<group>"; };
 		29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+Extension.swift"; sourceTree = "<group>"; };
 		29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard.Name+Extension.swift"; sourceTree = "<group>"; };
+		29D0939221A969C4003E6E1F /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		29D0939321A969C4003E6E1F /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		29EFA7831FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLVAnalyzerViewController.swift; sourceTree = "<group>"; };
 		29EFA7851FEEB0E700DB3A7A /* DnDDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DnDDelegate.swift; sourceTree = "<group>"; };
 		29EFA7871FEEB0F300DB3A7A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		291540A91FE41F5900EC9111 = {
 			isa = PBXGroup;
 			children = (
+				29D0939321A969C4003E6E1F /* Cartfile */,
+				29D0939221A969C4003E6E1F /* LICENSE.md */,
 				294555B01FEEAF7400C8F448 /* Sources */,
 				291540B31FE41F5900EC9111 /* Products */,
 				291540C71FE42D7000EC9111 /* Frameworks */,
@@ -102,12 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				29EFA7871FEEB0F300DB3A7A /* AppDelegate.swift */,
-				29EFA7881FEEB0F300DB3A7A /* Data+Extension.swift */,
 				29EFA78D1FEEB12C00DB3A7A /* DnDableView.swift */,
 				29B086671FEEB5F500CC1284 /* Extension */,
 				294555B21FEEAFF800C8F448 /* FLVAnalyzer */,
 				299587981FEFC4A600F11A7E /* HaishinMeter.entitlements */,
-				2995879B1FEFCBB500F11A7E /* Logboard */,
 				29EFA78F1FEEB15E00DB3A7A /* Main.storyboard */,
 				294555B11FEEAFF100C8F448 /* Protocol */,
 				29EFA7931FEEB1A300DB3A7A /* RTMPAnalyzer */,
@@ -132,17 +132,10 @@
 			path = FLVAnalyzer;
 			sourceTree = "<group>";
 		};
-		2995879B1FEFCBB500F11A7E /* Logboard */ = {
-			isa = PBXGroup;
-			children = (
-				2995879C1FEFCBD200F11A7E /* NSTextViewAppender.swift */,
-			);
-			path = Logboard;
-			sourceTree = "<group>";
-		};
 		29B086671FEEB5F500CC1284 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				29EFA7881FEEB0F300DB3A7A /* Data+Extension.swift */,
 				29B0866A1FEEB6EA00CC1284 /* NSObject+Extension.swift */,
 				29B086681FEEB64000CC1284 /* NSViewController+Extension.swift */,
 				29B0866C1FEEB83F00CC1284 /* NSStoryboard.Name+Extension.swift */,
@@ -269,7 +262,6 @@
 				29EFA78A1FEEB0F300DB3A7A /* AppDelegate.swift in Sources */,
 				29EFA78B1FEEB0F300DB3A7A /* Data+Extension.swift in Sources */,
 				29EFA78E1FEEB12C00DB3A7A /* DnDableView.swift in Sources */,
-				2995879D1FEFCBD200F11A7E /* NSTextViewAppender.swift in Sources */,
 				29EFA7841FEEB0DD00DB3A7A /* FLVAnalyzerViewController.swift in Sources */,
 				29B086691FEEB64000CC1284 /* NSViewController+Extension.swift in Sources */,
 				29EFA7861FEEB0E700DB3A7A /* DnDDelegate.swift in Sources */,

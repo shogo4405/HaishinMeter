@@ -4,15 +4,15 @@ import Foundation
 import AVFoundation
 
 final class RTMPAnalyzerViewController: NSViewController {
-    @IBOutlet var previewView: GLHKView!
-    @IBOutlet var playbackView: GLHKView!
+    @IBOutlet private weak var previewView: GLHKView!
+    @IBOutlet private weak var playbackView: GLHKView!
 
-    @IBOutlet var audioPopUpButton: NSPopUpButton!
-    @IBOutlet var cameraPopUpButton: NSPopUpButton!
-    @IBOutlet var publishURLField: NSTextField!
-    @IBOutlet var publishStreamField: NSTextField!
-    @IBOutlet var playbackURLField: NSTextField!
-    @IBOutlet var playbackStreamField: NSTextField!
+    @IBOutlet private weak var audioPopUpButton: NSPopUpButton!
+    @IBOutlet private weak var cameraPopUpButton: NSPopUpButton!
+    @IBOutlet private weak var publishURLField: NSTextField!
+    @IBOutlet private weak var publishStreamField: NSTextField!
+    @IBOutlet private weak var playbackURLField: NSTextField!
+    @IBOutlet private weak var playbackStreamField: NSTextField!
 
     private var publishConnection: RTMPConnection = RTMPConnection()
     private var publishStream: RTMPStream!

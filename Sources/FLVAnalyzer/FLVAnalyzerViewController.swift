@@ -3,9 +3,9 @@ import Foundation
 import HaishinKit
 
 final class FLVAnalyzerViewController: NSViewController {
-    @IBOutlet var tableView: NSTableView! = nil
-    @IBOutlet var splitView: NSSplitView! = nil
-    @IBOutlet var hexView: NSTextView! = nil
+    @IBOutlet private weak var tableView: NSTableView! = nil
+    @IBOutlet private weak var splitView: NSSplitView! = nil
+    @IBOutlet private weak var hexView: NSTextView! = nil
 
     private var tags: [FLVTag] = []
     private var reader: FLVReader?

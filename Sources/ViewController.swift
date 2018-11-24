@@ -2,7 +2,7 @@ import Cocoa
 import AVFoundation
 
 final class ViewController: NSViewController {
-    @IBOutlet var containerView: NSView!
+    @IBOutlet private weak var containerView: NSView!
 
     private var currentController: NSViewController? = nil {
         didSet {
