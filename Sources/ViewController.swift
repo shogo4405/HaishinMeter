@@ -7,7 +7,7 @@ final class ViewController: NSViewController {
     private var currentController: NSViewController? = nil {
         didSet {
             if let oldValue: NSViewController = oldValue {
-                oldValue.removeFromParentViewController()
+                oldValue.removeFromParent()
                 oldValue.view.removeFromSuperview()
             }
             if let currentController: NSViewController = currentController {
@@ -25,7 +25,7 @@ final class ViewController: NSViewController {
                     )
                 }
                 containerView.addConstraints(constraints)
-                addChildViewController(currentController)
+                addChild(currentController)
             }
         }
     }

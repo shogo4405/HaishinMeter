@@ -3,7 +3,7 @@ import Cocoa
 
 extension NSViewController {
     class var identifier: NSStoryboard.SceneIdentifier {
-        return NSStoryboard.SceneIdentifier(className)
+        return className
     }
 
     class func getUIViewController() -> NSViewController {
